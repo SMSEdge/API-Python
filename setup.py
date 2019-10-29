@@ -1,14 +1,19 @@
 import setuptools
 
 setuptools.setup(
-    name="smsedge_api_python-SMSEdge",  # Replace with your own username
-    version="1.5.0",
+    name="smsedge_api_python-SMSEdge",
+    packages="smsedge_api_python-SMSEdge",
+    version="1.6.0",
     author="Mimon Copitman",
     author_email="mimon@smsedge.io",
     description="SMSEdge API package for Python development",
     long_description_content_type="text/markdown",
     url="https://github.com/SMSEdge/API-Python",
-    packages=setuptools.find_packages(),
+    install_requires=[
+        'requests',
+        'cerberus',
+        'datetime'
+    ],
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
@@ -21,10 +26,6 @@ setuptools.setup(
         'Programming Language :: Python :: Implementation :: CPython',
         'Programming Language :: Python :: Implementation :: PyPy'
     ],
-    install_requires=[
-        'requests',
-        'cerberus',
-        'datetime'
-    ],
+
     python_requires='>=3.6',
 )
