@@ -3,7 +3,7 @@ import setuptools
 setuptools.setup(
     name="smsedge_api_python-SMSEdge",
     packages=setuptools.find_packages(),
-    version="1.7.0",
+    version="2.0.0",
     author="Mimon Copitman",
     author_email="mimon@smsedge.io",
     description="SMSEdge API package for Python development",
