@@ -1,27 +1,22 @@
-from distutils.core import setup
-setup(
-  name = 'SMSEdge-API-Python',
-  packages = ['SMSEdge-API-Python'],
-  version = '1.0.0',
-  license='MIT',
-  description = 'SMSEdge API package for Python development',
-  author = 'Mimon Copitman',
-  author_email = 'mimon@smsedge.io',
-  url = 'https://github.com/SMSEdge/API-Python',
-  download_url = 'https://github.com/SMSEdge/API-Python/releases/tag/1.0.0',
-  keywords = [
-    "SMSEdge",
-    "SMSEdge-API",
-    "SMSEdge-API-Python"
-  ],
-  install_requires=[
-          'cerberus',
-      ],
-  classifiers=[
-    'Development Status :: 3 - Alpha',
-    'Intended Audience :: Developers',
-    'Topic :: Software Development :: Build Tools',
-    'License :: MIT License',
-    'Programming Language :: Python :: 3.6',
-  ],
+import setuptools
+
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
+setuptools.setup(
+    name="smsedge_api_python-SMSEdge", # Replace with your own username
+    version="1.0.0",
+    author="Mimon Copitman",
+    author_email="mimon@smsedge.io",
+    description="SMSEdge API package for Python development",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    url="https://github.com/SMSEdge/API-Python",
+    packages=setuptools.find_packages(),
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: Apache License, Version 1.1 (Apache-1.1)",
+        "Operating System :: OS Independent",
+    ],
+    python_requires='>=3.6',
 )
