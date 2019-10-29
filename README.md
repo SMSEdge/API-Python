@@ -3,28 +3,18 @@ Pip package for interacting SMSEdge API functions.
 You can browse our documentation for more details: https://developers.smsedge.io/v1/reference
 
 ## Installation
-* Please install cerberus package by pip to your project
 ```commandline
-pip install cerberus
+pip install smsedge-api-python-SMSEdge
 ``` 
 
 ## Initialization
-Use the API Key from your account (https://app.smsedge.io/users/) to create a new SmsEdgeApi instance.
+Import class the the package
 ```python
-
+from smsedge_api_python import SmsEdgeApi
 ```
-
-```python
-from src.sms_edge_api import SmsEdgeApi
-```
-
-* To use date please import datetime library
-
-```python
-import datetime
-```   
 
 * Make an object from the class.
+* Use the API Key from your account (https://app.smsedge.io/users/) to create a new SmsEdgeApi instance.
 ```python
 api = SmsEdgeApi('') # api_key is required, For example: K_xGA286GbLxGf7zWM
 ```
