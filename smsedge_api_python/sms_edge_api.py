@@ -50,7 +50,7 @@ class SmsEdgeApi(object):
             'email': {'type': 'string', 'regex': '^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$'},
             'country_id': {'type': 'integer', 'maxlength': 32},
             'reference': {'type': 'string'},
-            'shorten_url': {'type': 'boolean'},
+            'shorten_url': {'type': 'integer'},
             'list_id': {'type': 'integer', 'maxlength': 32},
             'transactional': {'type': 'integer', 'maxlength': 32},
             'preferred_route_id': {'type': 'integer', 'maxlength': 32},
@@ -69,7 +69,7 @@ class SmsEdgeApi(object):
             'list_id': {'required': True, 'type': 'integer', 'maxlength': 32},
             'from': {'required': True, 'type': 'string'},
             'text': {'required': True, 'type': 'string'},
-            'shorten_url': {'type': 'boolean'},
+            'shorten_url': {'type': 'integer'},
             'preferred_route_id': {'type': 'integer', 'maxlength': 32}
         }
 
